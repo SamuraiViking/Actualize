@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vue.js Intro</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+  <div id="app">
+
+    <div>1st number: <input type="text" v-model ="num1"></div>
+    <div>2nd number: <input type="text" v-model = "num2"></div>
+    <div>3rd number: <input type="text" v-model = "num3"></div>
+    <div><button v-on:click="computeSum()">Compute Sum</button></div>
+    <div><button v-on:click="computeProduct()">Compute Product</button>
+    <p>The result is: {{ result }}</p>
+  </div>
+
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>

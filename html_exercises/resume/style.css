@@ -1,0 +1,46 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.wrapper {
+  width: 960px;
+  padding: 20px;
+  margin: 0 auto;
+  border: solid;
+  border-color: blue;
+}
+
+main {
+}
+
+header[role="banner"] {
+}
+
+header img {
+  height: 200px;
+  border-radius: 50%;
+  margin-left: 400px;
+}
+
+header * {
+  margin: 0px auto;
+  text-align: center;
+}
+
+section h2 {
+  background: blue;
+  padding: 20px 20px;
+  color: white;
+}
+
+section * {
+  color: blue;
+  font-size: 23px;
+}
+
+
+
+
+
+

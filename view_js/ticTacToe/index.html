@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vue.js Intro</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+  <div id="app">
+    <table>
+      <tr>
+        <td v-on:click="toggle(1)">
+          <img v-on:click="toggle(1)" v-if="marks[1] == 'x'"  src="https://bit.ly/2anumXQ" alt="x">
+          <img v-on:click="toggle(1)" v-if="marks[1] == 'o'" src="https://bit.ly/2Oi3MqP" alt="o">
+        </td>
+        <td v-on:click="toggle(2)">
+          <img v-if="marks[2] == 'x'" src="https://bit.ly/2anumXQ" alt="x">
+          <img v-if="marks[2] == 'o'" src="https://bit.ly/2Oi3MqP" alt="o">
+        </td>
+        <td v-on:click="toggle(3)">
+          <img v-if="marks[3] == 'x'" src="https://bit.ly/2anumXQ" alt="x">
+          <img v-if="marks[3] == 'o'" src="https://bit.ly/2Oi3MqP" alt="o">
+        </td>
+      </tr>
+      <tr>
+        <td v-on:click="toggle(4)">
+          <img v-if="marks[4] == 'x'" src="https://bit.ly/2anumXQ" alt="x">
+          <img v-if="marks[4] == 'o'" src="https://bit.ly/2Oi3MqP" alt="o">
+        </td>
+        <td v-on:click="toggle(5)">
+          <img v-if="marks[5] == 'x'" src="https://bit.ly/2anumXQ" alt="x">
+          <img v-if="marks[5] == 'o'" src="https://bit.ly/2Oi3MqP" alt="o">
+        </td>
+        <td v-on:click="toggle(6)">
+          <img v-if="marks[6] == 'x'" src="https://bit.ly/2anumXQ" alt="x">
+          <img v-if="marks[6] == 'o'" src="https://bit.ly/2Oi3MqP" alt="o">
+        </td>
+      </tr>
+      <tr>
+        <td v-on:click="toggle(7)">
+          <img v-if="marks[7] == 'x'" src="https://bit.ly/2anumXQ" alt="x">
+          <img v-if="marks[7] == 'o'" src="https://bit.ly/2Oi3MqP" alt="o">
+        </td>
+        <td v-on:click="toggle(8)">
+          <img v-if="marks[8] == 'x'" src="https://bit.ly/2anumXQ" alt="x">
+          <img v-if="marks[8] == 'o'" src="https://bit.ly/2Oi3MqP" alt="o">
+        </td>
+        <td v-on:click="toggle(9)">
+          <img v-if="marks[9] == 'x'" src="https://bit.ly/2anumXQ" alt="x">
+          <img v-if="marks[9] == 'o'" src="https://bit.ly/2Oi3MqP" alt="o">
+        </td>
+      </tr>
+    </table>
+    <button v-on:click="reset">reset</button>
+  </div>
+  <script src="src.js"></script>
+</body>
+</html>

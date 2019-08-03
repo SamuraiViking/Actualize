@@ -1,3 +1,39 @@
-input = number
-output = factorial
+input hash object
+
+outpout hash objected 
+
+
+def sort_hash_keys_alphabetically(hash)
+  hash_keys = []
+
+  hash.each_key do |key|
+    hash_keys << key
+  end
+
+  hash_keys = hash_keys.sort
+
+  sorted_hash = {}
+
+  hash_keys.each do |key|
+    sorted_hash[key] = ''
+  end
+
+  hash.each do |key, value|
+    sorted_hash[key] = value
+  end
+
+  sorted_hash
+end
+
+## quick sort
+## heap sort 
+## merge sort 
+
+## n log(n)
+
+log(2) = 1
+log(4) = 2
+log()
+
+
 
